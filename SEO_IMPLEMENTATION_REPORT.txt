@@ -1,0 +1,29 @@
+MACTORY FATCH — DIRECTORY + SEO IMPLEMENTATION
+
+Added:
+- /customer and /factoryowner route aliases.
+- /categories category index.
+- Server-rendered /category/:slug landing pages with metadata, canonical URLs, Open Graph tags and CollectionPage JSON-LD.
+- Server-rendered /factory/:slug pages for approved factories only, with Organization JSON-LD and clear unverified-claim caveats.
+- /sitemap.xml generated from static pages and approved public factories/categories.
+- /robots.txt generated with sitemap location and exclusions for API/admin/workspace.
+- Empty categories are noindex until they contain approved public factory listings.
+- Readable factory-profile links in the buyer directory.
+- Updated "Verified" listing label to "Approved listing" to avoid overstating verification.
+- Local Node server support for all new readable routes.
+- README deployment instructions and SITE_URL environment-variable guidance.
+
+Before production:
+1. Configure SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY and ADMIN_TOKEN in Vercel.
+2. Set SITE_URL to your actual canonical domain.
+3. Deploy, then test the route checklist in README.md.
+4. Register real factories and approve them only after human review and recorded public-listing consent.
+5. Verify the domain in Google Search Console and submit /sitemap.xml.
+
+No fake factory profiles were added. Empty directory/category states are intentional.
+
+Additional SEO audit:
+- Added canonical and Open Graph metadata to the static public pages.
+- Added Organization JSON-LD to the homepage and CollectionPage JSON-LD to the category index.
+- Marked the legacy query-based factory page as noindex; readable /factory/:slug URLs are the preferred profile pages.
+- Added noindex to the private workspace and admin console.

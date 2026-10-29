@@ -1,0 +1,772 @@
+[
+  {
+    "name": "Food & beverages",
+    "slug": "food-beverages",
+    "description": "Explore food & beverages manufacturers, products, processes and custom sourcing requirements. Public supplier listings appear only after approval and consent.",
+    "subcategories": [
+      "Packaged foods",
+      "Snacks & confectionery",
+      "Dairy products",
+      "Beverages & bottled water",
+      "Bakery products",
+      "Edible oils & fats",
+      "Spices & seasonings",
+      "Food ingredients",
+      "Frozen & ready-to-eat foods",
+      "Food processing equipment"
+    ]
+  },
+  {
+    "name": "Beauty, skincare & cosmetics",
+    "slug": "beauty-skincare-cosmetics",
+    "description": "Explore beauty, skincare & cosmetics manufacturers, products, processes and custom sourcing requirements. Public supplier listings appear only after approval and consent.",
+    "subcategories": [
+      "Perfumes & fragrances",
+      "Skincare products",
+      "Haircare products",
+      "Colour cosmetics",
+      "Personal care & hygiene",
+      "Essential oils & aroma products",
+      "Private-label cosmetics",
+      "Cosmetic packaging"
+    ]
+  },
+  {
+    "name": "Fashion, clothing & textiles",
+    "slug": "fashion-clothing-textiles",
+    "description": "Explore fashion, clothing & textiles manufacturers, products, processes and custom sourcing requirements. Public supplier listings appear only after approval and consent.",
+    "subcategories": [
+      "Garments & apparel",
+      "Knitted fabrics",
+      "Woven fabrics",
+      "Technical textiles",
+      "Home textiles",
+      "Yarn & fibres",
+      "Denim & workwear",
+      "Dyeing & finishing",
+      "Nonwovens",
+      "Uniforms"
+    ]
+  },
+  {
+    "name": "Jewellery & accessories",
+    "slug": "jewellery-accessories",
+    "description": "Explore jewellery & accessories manufacturers, products, processes and custom sourcing requirements. Public supplier listings appear only after approval and consent.",
+    "subcategories": [
+      "Fine jewellery",
+      "Fashion jewellery",
+      "Watches & straps",
+      "Bags & wallets",
+      "Belts & leather accessories",
+      "Eyewear",
+      "Hair accessories",
+      "Metal accessories"
+    ]
+  },
+  {
+    "name": "Home, kitchen & furniture",
+    "slug": "home-kitchen-furniture",
+    "description": "Explore home, kitchen & furniture manufacturers, products, processes and custom sourcing requirements. Public supplier listings appear only after approval and consent.",
+    "subcategories": [
+      "Furniture",
+      "Modular kitchens",
+      "Cookware",
+      "Kitchen utensils",
+      "Home décor",
+      "Mattresses & bedding",
+      "Storage & organizers",
+      "Lighting fixtures",
+      "Ceramics & tableware",
+      "Wooden household goods"
+    ]
+  },
+  {
+    "name": "Packaging & printing",
+    "slug": "packaging-printing",
+    "description": "Explore packaging & printing manufacturers, products, processes and custom sourcing requirements. Public supplier listings appear only after approval and consent.",
+    "subcategories": [
+      "Plastic bottles & containers",
+      "Glass bottles & jars",
+      "Metal cans & closures",
+      "Corrugated boxes",
+      "Folding cartons",
+      "Flexible packaging",
+      "Labels & stickers",
+      "Industrial packaging",
+      "Printing services",
+      "Moulded pulp packaging"
+    ]
+  },
+  {
+    "name": "Electronics & electrical products",
+    "slug": "electronics-electrical-products",
+    "description": "Explore electronics & electrical products manufacturers, products, processes and custom sourcing requirements. Public supplier listings appear only after approval and consent.",
+    "subcategories": [
+      "PCB assembly",
+      "Electronic components",
+      "Power supplies",
+      "Switchgear & panels",
+      "Wires & cables",
+      "LED lighting",
+      "Motors & drives",
+      "Sensors & controls",
+      "Battery packs",
+      "Electrical enclosures"
+    ]
+  },
+  {
+    "name": "Mobile & computer accessories",
+    "slug": "mobile-computer-accessories",
+    "description": "Explore mobile & computer accessories manufacturers, products, processes and custom sourcing requirements. Public supplier listings appear only after approval and consent.",
+    "subcategories": [
+      "Charging cables & adapters",
+      "Phone cases",
+      "Computer peripherals",
+      "Keyboards & mice",
+      "Laptop stands & mounts",
+      "Audio accessories",
+      "Networking accessories",
+      "Storage accessories"
+    ]
+  },
+  {
+    "name": "Plastic products",
+    "slug": "plastic-products",
+    "description": "Explore plastic products manufacturers, products, processes and custom sourcing requirements. Public supplier listings appear only after approval and consent.",
+    "subcategories": [
+      "Injection-moulded parts",
+      "Blow-moulded bottles",
+      "Extruded profiles & pipes",
+      "Plastic films & sheets",
+      "Rotomoulded products",
+      "Plastic household goods",
+      "Plastic caps & closures",
+      "Recycled plastic products",
+      "Custom plastic components"
+    ]
+  },
+  {
+    "name": "Metal products & components",
+    "slug": "metal-products-components",
+    "description": "Explore metal products & components manufacturers, products, processes and custom sourcing requirements. Public supplier listings appear only after approval and consent.",
+    "subcategories": [
+      "CNC machined parts",
+      "Sheet-metal fabrication",
+      "Castings & forgings",
+      "Fasteners & hardware",
+      "Metal stamping",
+      "Welding & assemblies",
+      "Steel structures",
+      "Aluminium components",
+      "Brass & copper components",
+      "Surface finishing"
+    ]
+  },
+  {
+    "name": "Machinery & industrial equipment",
+    "slug": "machinery-industrial-equipment",
+    "description": "Explore machinery & industrial equipment manufacturers, products, processes and custom sourcing requirements. Public supplier listings appear only after approval and consent.",
+    "subcategories": [
+      "Industrial machinery",
+      "Packaging machinery",
+      "Textile machinery",
+      "Food processing machinery",
+      "Pumps & valves",
+      "Conveyors & material handling",
+      "Compressors",
+      "Machine tools",
+      "Industrial automation",
+      "Spare parts"
+    ]
+  },
+  {
+    "name": "Automotive & transport parts",
+    "slug": "automotive-transport-parts",
+    "description": "Explore automotive & transport parts manufacturers, products, processes and custom sourcing requirements. Public supplier listings appear only after approval and consent.",
+    "subcategories": [
+      "Automotive components",
+      "Two-wheeler parts",
+      "EV components",
+      "Commercial vehicle parts",
+      "Railway components",
+      "Aerospace components",
+      "Marine components",
+      "Rubber automotive parts",
+      "Interior & trim parts"
+    ]
+  },
+  {
+    "name": "Medical & healthcare products",
+    "slug": "medical-healthcare-products",
+    "description": "Explore medical & healthcare products manufacturers, products, processes and custom sourcing requirements. Public supplier listings appear only after approval and consent.",
+    "subcategories": [
+      "Medical devices",
+      "Hospital furniture",
+      "Surgical instruments",
+      "Diagnostic consumables",
+      "Healthcare disposables",
+      "Laboratory equipment",
+      "Pharmaceutical packaging",
+      "Dental products",
+      "Rehabilitation equipment"
+    ]
+  },
+  {
+    "name": "Sports, fitness & outdoor products",
+    "slug": "sports-fitness-outdoor-products",
+    "description": "Explore sports, fitness & outdoor products manufacturers, products, processes and custom sourcing requirements. Public supplier listings appear only after approval and consent.",
+    "subcategories": [
+      "Fitness equipment",
+      "Sports goods",
+      "Outdoor gear",
+      "Bicycles & parts",
+      "Camping products",
+      "Protective equipment",
+      "Yoga & wellness accessories"
+    ]
+  },
+  {
+    "name": "Toys, games & children’s products",
+    "slug": "toys-games-childrens-products",
+    "description": "Explore toys, games & children’s products manufacturers, products, processes and custom sourcing requirements. Public supplier listings appear only after approval and consent.",
+    "subcategories": [
+      "Educational toys",
+      "Board games",
+      "Plush toys",
+      "Plastic toys",
+      "Wooden toys",
+      "Baby products",
+      "Playground equipment",
+      "Collectibles & hobby kits"
+    ]
+  },
+  {
+    "name": "Paper, stationery & books",
+    "slug": "paper-stationery-books",
+    "description": "Explore paper, stationery & books manufacturers, products, processes and custom sourcing requirements. Public supplier listings appear only after approval and consent.",
+    "subcategories": [
+      "Books & publishing",
+      "Notebooks & registers",
+      "Pens & writing instruments",
+      "Office stationery",
+      "Paper mills & paper grades",
+      "Tissue & hygiene paper",
+      "Paper bags",
+      "Envelopes & files",
+      "Book binding",
+      "Art supplies"
+    ]
+  },
+  {
+    "name": "Construction & building products",
+    "slug": "construction-building-products",
+    "description": "Explore construction & building products manufacturers, products, processes and custom sourcing requirements. Public supplier listings appear only after approval and consent.",
+    "subcategories": [
+      "Cement & concrete products",
+      "Bricks & blocks",
+      "Tiles & ceramics",
+      "Doors & windows",
+      "Glass products",
+      "Roofing & insulation",
+      "Pipes & fittings",
+      "Sanitaryware",
+      "Rebar & structural steel",
+      "Architectural hardware"
+    ]
+  },
+  {
+    "name": "Agriculture & gardening products",
+    "slug": "agriculture-gardening-products",
+    "description": "Explore agriculture & gardening products manufacturers, products, processes and custom sourcing requirements. Public supplier listings appear only after approval and consent.",
+    "subcategories": [
+      "Agricultural implements",
+      "Irrigation equipment",
+      "Greenhouse supplies",
+      "Seeds & nursery products",
+      "Fertilizer products",
+      "Garden tools",
+      "Planters & pots",
+      "Animal husbandry equipment",
+      "Post-harvest equipment"
+    ]
+  },
+  {
+    "name": "Chemicals & materials",
+    "slug": "chemicals-materials",
+    "description": "Explore chemicals & materials manufacturers, products, processes and custom sourcing requirements. Public supplier listings appear only after approval and consent.",
+    "subcategories": [
+      "Industrial chemicals",
+      "Specialty chemicals",
+      "Adhesives & sealants",
+      "Paints & coatings",
+      "Pigments & dyes",
+      "Rubber compounds",
+      "Resins & polymers",
+      "Water treatment chemicals",
+      "Industrial gases",
+      "Cleaning chemicals"
+    ]
+  },
+  {
+    "name": "Promotional merchandise & creator/influencer products",
+    "slug": "promotional-merchandise-creator-products",
+    "description": "Explore promotional merchandise & creator/influencer products manufacturers, products, processes and custom sourcing requirements. Public supplier listings appear only after approval and consent.",
+    "subcategories": [
+      "Custom merchandise",
+      "Branded apparel",
+      "Promotional gifts",
+      "Printed merchandise",
+      "Custom packaging",
+      "Event merchandise",
+      "Private-label products"
+    ]
+  },
+  {
+    "name": "Wood, timber & forestry products",
+    "slug": "wood-timber-forestry-products",
+    "description": "Explore wood, timber & forestry products manufacturers, products, processes and custom sourcing requirements. Public supplier listings appear only after approval and consent.",
+    "subcategories": [
+      "Sawn timber",
+      "Plywood & veneers",
+      "MDF & particle board",
+      "Wooden pallets & crates",
+      "Doors & frames",
+      "Wooden components",
+      "Engineered wood products",
+      "Bamboo products",
+      "Wood treatment"
+    ]
+  },
+  {
+    "name": "Rubber & elastomer products",
+    "slug": "rubber-elastomer-products",
+    "description": "Explore rubber & elastomer products manufacturers, products, processes and custom sourcing requirements. Public supplier listings appear only after approval and consent.",
+    "subcategories": [
+      "Rubber moulded parts",
+      "Industrial hoses",
+      "Seals & gaskets",
+      "Tyres & tubes",
+      "Rubber sheets",
+      "Silicone products",
+      "Conveyor belts",
+      "Foam elastomers"
+    ]
+  },
+  {
+    "name": "Glass & ceramics",
+    "slug": "glass-ceramics",
+    "description": "Explore glass & ceramics manufacturers, products, processes and custom sourcing requirements. Public supplier listings appear only after approval and consent.",
+    "subcategories": [
+      "Flat glass",
+      "Tempered glass",
+      "Glass containers",
+      "Laboratory glassware",
+      "Ceramic components",
+      "Technical ceramics",
+      "Porcelain products",
+      "Glass fibre products"
+    ]
+  },
+  {
+    "name": "Fibres, yarn & nonwovens",
+    "slug": "fibres-yarn-nonwovens",
+    "description": "Explore fibres, yarn & nonwovens manufacturers, products, processes and custom sourcing requirements. Public supplier listings appear only after approval and consent.",
+    "subcategories": [
+      "Natural fibres",
+      "Synthetic fibres",
+      "Industrial yarn",
+      "Spun yarn",
+      "Nonwoven fabrics",
+      "Fibre filling",
+      "Recycled fibres",
+      "Ropes & cords"
+    ]
+  },
+  {
+    "name": "Leather & footwear",
+    "slug": "leather-footwear",
+    "description": "Explore leather & footwear manufacturers, products, processes and custom sourcing requirements. Public supplier listings appear only after approval and consent.",
+    "subcategories": [
+      "Leather goods",
+      "Shoes & footwear",
+      "Soles & shoe components",
+      "Safety footwear",
+      "Synthetic leather",
+      "Tanning & finishing",
+      "Leather accessories"
+    ]
+  },
+  {
+    "name": "Oil, lubricants & energy products",
+    "slug": "oil-lubricants-energy-products",
+    "description": "Explore oil, lubricants & energy products manufacturers, products, processes and custom sourcing requirements. Public supplier listings appear only after approval and consent.",
+    "subcategories": [
+      "Lubricants & greases",
+      "Industrial oils",
+      "Biofuels",
+      "Solar components",
+      "Energy storage components",
+      "Fuel handling equipment",
+      "Oilfield equipment"
+    ]
+  },
+  {
+    "name": "Mining, minerals & stone",
+    "slug": "mining-minerals-stone",
+    "description": "Explore mining, minerals & stone manufacturers, products, processes and custom sourcing requirements. Public supplier listings appear only after approval and consent.",
+    "subcategories": [
+      "Marble & granite",
+      "Natural stone slabs",
+      "Mineral powders",
+      "Industrial minerals",
+      "Quarry products",
+      "Stone cutting & finishing",
+      "Ceramic raw materials",
+      "Aggregates"
+    ]
+  },
+  {
+    "name": "Metallurgy, steel & non-ferrous materials",
+    "slug": "metallurgy-steel-nonferrous",
+    "description": "Explore metallurgy, steel & non-ferrous materials manufacturers, products, processes and custom sourcing requirements. Public supplier listings appear only after approval and consent.",
+    "subcategories": [
+      "Steel mills & products",
+      "Stainless steel products",
+      "Aluminium extrusion",
+      "Copper products",
+      "Brass products",
+      "Metal powders",
+      "Wire rods & wires",
+      "Recycled metals"
+    ]
+  },
+  {
+    "name": "Tools, hardware & fasteners",
+    "slug": "tools-hardware-fasteners",
+    "description": "Explore tools, hardware & fasteners manufacturers, products, processes and custom sourcing requirements. Public supplier listings appear only after approval and consent.",
+    "subcategories": [
+      "Hand tools",
+      "Power tool accessories",
+      "Industrial fasteners",
+      "Locks & hinges",
+      "Screws & bolts",
+      "Cutting tools",
+      "Abrasives",
+      "Workshop hardware"
+    ]
+  },
+  {
+    "name": "Precision engineering & technical parts",
+    "slug": "precision-engineering-technical-parts",
+    "description": "Explore precision engineering & technical parts manufacturers, products, processes and custom sourcing requirements. Public supplier listings appear only after approval and consent.",
+    "subcategories": [
+      "Precision turned parts",
+      "CNC milling",
+      "Gears & gearboxes",
+      "Bearings",
+      "Springs",
+      "Jigs & fixtures",
+      "Moulds & dies",
+      "Toleranced components",
+      "Custom assemblies"
+    ]
+  },
+  {
+    "name": "Industrial automation & robotics",
+    "slug": "industrial-automation-robotics",
+    "description": "Explore industrial automation & robotics manufacturers, products, processes and custom sourcing requirements. Public supplier listings appear only after approval and consent.",
+    "subcategories": [
+      "Robotics components",
+      "PLC & control panels",
+      "Industrial sensors",
+      "Machine vision",
+      "Pneumatics",
+      "Hydraulics",
+      "Actuators",
+      "Automation cells"
+    ]
+  },
+  {
+    "name": "Renewable energy & electrical infrastructure",
+    "slug": "renewable-energy-electrical-infrastructure",
+    "description": "Explore renewable energy & electrical infrastructure manufacturers, products, processes and custom sourcing requirements. Public supplier listings appear only after approval and consent.",
+    "subcategories": [
+      "Solar modules & structures",
+      "Inverters",
+      "Wind energy components",
+      "Transformers",
+      "Power distribution",
+      "EV charging equipment",
+      "Grid hardware",
+      "Insulators"
+    ]
+  },
+  {
+    "name": "Telecommunications & networking",
+    "slug": "telecommunications-networking",
+    "description": "Explore telecommunications & networking manufacturers, products, processes and custom sourcing requirements. Public supplier listings appear only after approval and consent.",
+    "subcategories": [
+      "Telecom equipment",
+      "Optical fibre components",
+      "Network cabinets",
+      "RF components",
+      "Antennas",
+      "Connectors",
+      "Data centre hardware"
+    ]
+  },
+  {
+    "name": "Aerospace, defence & security equipment",
+    "slug": "aerospace-defence-security-equipment",
+    "description": "Explore aerospace, defence & security equipment manufacturers, products, processes and custom sourcing requirements. Public supplier listings appear only after approval and consent.",
+    "subcategories": [
+      "Aerospace structures",
+      "Precision aerospace parts",
+      "Defence components",
+      "Protective equipment",
+      "Security hardware",
+      "Surveillance enclosures",
+      "Specialty materials"
+    ]
+  },
+  {
+    "name": "Laboratory, scientific & measurement equipment",
+    "slug": "laboratory-scientific-measurement-equipment",
+    "description": "Explore laboratory, scientific & measurement equipment manufacturers, products, processes and custom sourcing requirements. Public supplier listings appear only after approval and consent.",
+    "subcategories": [
+      "Measuring instruments",
+      "Testing equipment",
+      "Laboratory consumables",
+      "Calibration equipment",
+      "Optical instruments",
+      "Scientific apparatus"
+    ]
+  },
+  {
+    "name": "Office, school & educational supplies",
+    "slug": "office-school-educational-supplies",
+    "description": "Explore office, school & educational supplies manufacturers, products, processes and custom sourcing requirements. Public supplier listings appear only after approval and consent.",
+    "subcategories": [
+      "Pens & pencils",
+      "School bags",
+      "Learning aids",
+      "Whiteboards",
+      "Office furniture",
+      "Filing products",
+      "Craft materials",
+      "Educational kits"
+    ]
+  },
+  {
+    "name": "Cleaning, sanitation & facility supplies",
+    "slug": "cleaning-sanitation-facility-supplies",
+    "description": "Explore cleaning, sanitation & facility supplies manufacturers, products, processes and custom sourcing requirements. Public supplier listings appear only after approval and consent.",
+    "subcategories": [
+      "Cleaning tools",
+      "Mops & brushes",
+      "Sanitation dispensers",
+      "Waste bins",
+      "Janitorial chemicals",
+      "Facility safety products"
+    ]
+  },
+  {
+    "name": "Safety, PPE & industrial workwear",
+    "slug": "safety-ppe-industrial-workwear",
+    "description": "Explore safety, ppe & industrial workwear manufacturers, products, processes and custom sourcing requirements. Public supplier listings appear only after approval and consent.",
+    "subcategories": [
+      "Safety helmets",
+      "Gloves",
+      "Protective eyewear",
+      "Respirators",
+      "High-visibility clothing",
+      "Fall protection",
+      "Industrial footwear",
+      "Fire safety equipment"
+    ]
+  },
+  {
+    "name": "Water, plumbing & environmental systems",
+    "slug": "water-plumbing-environmental-systems",
+    "description": "Explore water, plumbing & environmental systems manufacturers, products, processes and custom sourcing requirements. Public supplier listings appear only after approval and consent.",
+    "subcategories": [
+      "Water filters",
+      "Pipes & fittings",
+      "Valves & taps",
+      "Wastewater treatment",
+      "Water tanks",
+      "Pumps",
+      "Drainage products",
+      "Air filtration"
+    ]
+  },
+  {
+    "name": "Recycling & circular materials",
+    "slug": "recycling-circular-materials",
+    "description": "Explore recycling & circular materials manufacturers, products, processes and custom sourcing requirements. Public supplier listings appear only after approval and consent.",
+    "subcategories": [
+      "Plastic recycling",
+      "Paper recycling",
+      "Metal recycling",
+      "Textile recycling",
+      "Recycled packaging",
+      "Waste processing equipment",
+      "Recovered material pellets"
+    ]
+  },
+  {
+    "name": "Logistics, storage & material handling",
+    "slug": "logistics-storage-material-handling",
+    "description": "Explore logistics, storage & material handling manufacturers, products, processes and custom sourcing requirements. Public supplier listings appear only after approval and consent.",
+    "subcategories": [
+      "Pallets & crates",
+      "Racking systems",
+      "Industrial bins",
+      "Material handling equipment",
+      "Trolleys & carts",
+      "Warehouse conveyors",
+      "Reusable transport packaging"
+    ]
+  },
+  {
+    "name": "Musical instruments & audio equipment",
+    "slug": "musical-instruments-audio-equipment",
+    "description": "Explore musical instruments & audio equipment manufacturers, products, processes and custom sourcing requirements. Public supplier listings appear only after approval and consent.",
+    "subcategories": [
+      "Musical instruments",
+      "Audio speakers",
+      "Headphones",
+      "Microphones",
+      "Studio equipment",
+      "Instrument accessories"
+    ]
+  },
+  {
+    "name": "Photography, optics & imaging products",
+    "slug": "photography-optics-imaging-products",
+    "description": "Explore photography, optics & imaging products manufacturers, products, processes and custom sourcing requirements. Public supplier listings appear only after approval and consent.",
+    "subcategories": [
+      "Camera accessories",
+      "Optical lenses",
+      "Lighting equipment",
+      "Tripods & mounts",
+      "Imaging components",
+      "Optical glass"
+    ]
+  },
+  {
+    "name": "Personal transport & mobility products",
+    "slug": "personal-transport-mobility-products",
+    "description": "Explore personal transport & mobility products manufacturers, products, processes and custom sourcing requirements. Public supplier listings appear only after approval and consent.",
+    "subcategories": [
+      "Bicycles",
+      "E-bikes",
+      "Mobility aids",
+      "Scooters & parts",
+      "Wheelchairs",
+      "Helmets & protection"
+    ]
+  },
+  {
+    "name": "Textbooks, publishing & print media",
+    "slug": "textbooks-publishing-print-media",
+    "description": "Explore textbooks, publishing & print media manufacturers, products, processes and custom sourcing requirements. Public supplier listings appear only after approval and consent.",
+    "subcategories": [
+      "Educational books",
+      "Commercial printing",
+      "Magazines & catalogues",
+      "Packaging print",
+      "Security printing",
+      "Digital print products"
+    ]
+  },
+  {
+    "name": "Pet products & animal care",
+    "slug": "pet-products-animal-care",
+    "description": "Explore pet products & animal care manufacturers, products, processes and custom sourcing requirements. Public supplier listings appear only after approval and consent.",
+    "subcategories": [
+      "Pet accessories",
+      "Animal feeders",
+      "Pet furniture",
+      "Aquaculture equipment",
+      "Veterinary supplies",
+      "Animal housing"
+    ]
+  },
+  {
+    "name": "Marine, boating & shipbuilding",
+    "slug": "marine-boating-shipbuilding",
+    "description": "Explore marine, boating & shipbuilding manufacturers, products, processes and custom sourcing requirements. Public supplier listings appear only after approval and consent.",
+    "subcategories": [
+      "Marine hardware",
+      "Boat components",
+      "Ship fittings",
+      "Marine electrical",
+      "Fibreglass hull parts",
+      "Marine safety products"
+    ]
+  },
+  {
+    "name": "Railway & public transport equipment",
+    "slug": "railway-public-transport-equipment",
+    "description": "Explore railway & public transport equipment manufacturers, products, processes and custom sourcing requirements. Public supplier listings appear only after approval and consent.",
+    "subcategories": [
+      "Railway fasteners",
+      "Interior fittings",
+      "Track components",
+      "Transit seating",
+      "Signalling enclosures",
+      "Bus components"
+    ]
+  },
+  {
+    "name": "Aviation ground support & airport products",
+    "slug": "aviation-ground-support-airport-products",
+    "description": "Explore aviation ground support & airport products manufacturers, products, processes and custom sourcing requirements. Public supplier listings appear only after approval and consent.",
+    "subcategories": [
+      "Ground support equipment",
+      "Airport trolleys",
+      "Aircraft service tools",
+      "Baggage handling components",
+      "Airfield lighting hardware"
+    ]
+  },
+  {
+    "name": "Industrial services & contract manufacturing",
+    "slug": "industrial-services-contract-manufacturing",
+    "description": "Explore industrial services & contract manufacturing manufacturers, products, processes and custom sourcing requirements. Public supplier listings appear only after approval and consent.",
+    "subcategories": [
+      "Contract assembly",
+      "OEM manufacturing",
+      "ODM product development",
+      "Prototyping",
+      "Tooling & mould making",
+      "Surface treatment",
+      "Industrial fabrication"
+    ]
+  },
+  {
+    "name": "Custom fabrication & made-to-order products",
+    "slug": "custom-fabrication-made-to-order-products",
+    "description": "Explore custom fabrication & made-to-order products manufacturers, products, processes and custom sourcing requirements. Public supplier listings appear only after approval and consent.",
+    "subcategories": [
+      "Custom-built products",
+      "Small-batch manufacturing",
+      "Prototype builds",
+      "Private label production",
+      "Made-to-drawing components",
+      "Job-work manufacturing"
+    ]
+  },
+  {
+    "name": "Other / not listed",
+    "slug": "other-not-listed",
+    "description": "Explore other / not listed manufacturers, products, processes and custom sourcing requirements. Public supplier listings appear only after approval and consent.",
+    "subcategories": [
+      "Describe your product",
+      "Custom manufacturing",
+      "New or emerging categories",
+      "Cross-industry manufacturing"
+    ]
+  }
+]

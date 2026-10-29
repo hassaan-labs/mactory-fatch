@@ -1,0 +1,34 @@
+MACTORY FATCH — START HERE (Windows)
+
+1. Extract the entire ZIP file first. Do not run the site from inside the ZIP preview.
+2. Install Node.js 20 or newer if it is not already installed: https://nodejs.org/en/download
+3. Double-click START-MACTORY-FATCH.bat.
+4. It will start the local server and open http://127.0.0.1:8000 in your browser.
+5. Keep the small server terminal running while using the website.
+6. To accept factory applications, copy .env.example to .env and set ADMIN_TOKEN to a long random secret. Registration is deliberately disabled until the private review queue is configured.
+7. Open http://127.0.0.1:8000/admin.html to review applications and enter the same ADMIN_TOKEN. Approvals require manual evidence checks and written notes.
+
+If the website still does not open:
+- If Windows blocks the .bat file, choose More info / Run anyway only if you trust the ZIP you downloaded.
+- If port 8000 is occupied by another program, open server.js and change PORT's default from 8000 to 8080, then update the URL in START-MACTORY-FATCH.bat to http://127.0.0.1:8080.
+- If Node.js is missing, install it and reopen the launcher.
+- Buyer AI tools are optional and will not work unless you configure OPENAI_API_KEY. Factory registration does not use AI or ML; it uses inexpensive rules-based checks plus mandatory human review. Registration intake stays disabled until ADMIN_TOKEN is configured.
+
+The directory starts empty. Only applications manually approved after verification and explicit public-listing consent appear there. The industrial photos are illustrative AI-generated images, not real supplier evidence.
+
+
+SECURITY / FACTORY DATA:
+- For registration testing, create a local .env from .env.example and set ADMIN_TOKEN and DATA_RETENTION_HMAC_KEY to separate random secrets.
+- Keep .env private; it is ignored by Git. Never send these secrets in chat or put them in HTML/JavaScript.
+- The local registrations.json file is not encrypted at rest. Use fictional test data locally; use private Supabase storage for production.
+- The admin token is exchanged for a short-lived HttpOnly session cookie and is not stored in browser localStorage/sessionStorage.
+- Public-listing consent is optional. Sensitive registration/contact/address fields are scrubbed after a decision; pending applications expire after 90 days and rejected status records after 30 days, subject to the configured cleanup task.
+- The factory registration form does not upload documents. Do not ask factories to submit ID documents or confidential drawings until a dedicated secure evidence process exists.
+
+
+RFQ delivery needs these additional Vercel environment variables:
+- RFQ_TOKEN_SECRET (random 32-byte secret)
+- RESEND_API_KEY
+- EMAIL_FROM (must be verified in Resend)
+Run the updated sql/supabase-schema.sql before deploying. A factory must opt in to RFQ email notifications; existing approved factories may need to re-submit because private contact email was scrubbed in the earlier privacy hardening. Check README.md for end-to-end tests and known deferred features.
+Production admin MFA: set ADMIN_TOTP_SECRET to a private Base32 secret and add it to an authenticator app. Production admin sign-in is blocked if this variable is missing. See README.md for generation instructions.

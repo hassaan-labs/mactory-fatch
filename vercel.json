@@ -1,0 +1,117 @@
+{
+  "version": 2,
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "SAMEORIGIN"
+        },
+        {
+          "key": "Permissions-Policy",
+          "value": "camera=(), microphone=(), geolocation=()"
+        },
+        {
+          "key": "Content-Security-Policy",
+          "value": "default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'self'; form-action 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self' https:; upgrade-insecure-requests"
+        },
+        {
+          "key": "Strict-Transport-Security",
+          "value": "max-age=31536000; includeSubDomains"
+        }
+      ]
+    }
+  ],
+  "functions": {
+    "api/ai/parse-brief.js": {
+      "maxDuration": 20
+    },
+    "api/ai/research-suppliers.js": {
+      "maxDuration": 60
+    },
+    "api/registrations.js": {
+      "maxDuration": 10
+    },
+    "api/factories.js": {
+      "maxDuration": 10
+    },
+    "api/admin/registrations.js": {
+      "maxDuration": 10
+    },
+    "api/seo/category.js": {
+      "maxDuration": 10
+    },
+    "api/seo/factory.js": {
+      "maxDuration": 10
+    },
+    "api/seo/sitemap.js": {
+      "maxDuration": 10
+    },
+    "api/admin/session.js": {
+      "maxDuration": 10
+    },
+    "api/maintenance/retention.js": {
+      "maxDuration": 30
+    },
+    "api/health.js": {
+      "maxDuration": 5
+    },
+    "api/rfqs.js": {
+      "maxDuration": 15
+    },
+    "api/rfqs/status.js": {
+      "maxDuration": 10
+    },
+    "api/rfqs/respond.js": {
+      "maxDuration": 15
+    },
+    "api/admin/rfqs.js": {
+      "maxDuration": 15
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/factoryowner",
+      "destination": "/manufacturers.html"
+    },
+    {
+      "source": "/customer",
+      "destination": "/buyers.html"
+    },
+    {
+      "source": "/categories",
+      "destination": "/categories.html"
+    },
+    {
+      "source": "/category/:slug",
+      "destination": "/api/seo/category?slug=:slug"
+    },
+    {
+      "source": "/factory/:slug",
+      "destination": "/api/seo/factory?slug=:slug"
+    },
+    {
+      "source": "/sitemap.xml",
+      "destination": "/api/seo/sitemap"
+    },
+    {
+      "source": "/robots.txt",
+      "destination": "/api/seo/robots"
+    }
+  ],
+  "crons": [
+    {
+      "path": "/api/maintenance/retention",
+      "schedule": "0 3 * * *"
+    }
+  ]
+}

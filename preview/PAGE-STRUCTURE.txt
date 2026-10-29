@@ -1,0 +1,8 @@
+MACTORY FATCH multi-page website preview
+
+Preview images:
+- homepage.png — rendered product homepage, with illustrative photography clearly labelled and no claimed registrations or member count.
+- buyers-empty.png — buyer page displaying the honest empty-state directory and sourcing brief tools; no fictional factory cards or invented match scores.
+
+Pages: index.html, buyers.html, factory.html, manufacturers.html, workspace.html, privacy.html, terms.html, about.html, contact.html.
+The member directory intentionally has zero registered manufacturers. Industrial photos are AI-generated illustrative assets, not evidence of any supplier or facility.

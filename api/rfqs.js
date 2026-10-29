@@ -1,0 +1,21 @@
+'use strict';
+const crypto=require('node:crypto');
+const store=require('../verification-store.cjs');
+const svc=require('../lib/rfq-service.cjs');
+function sameOrigin(req){const origin=req.headers.origin;if(!origin)return true;try{const u=new URL(origin);const host=String(req.headers['x-forwarded-host']||req.headers.host||'').split(',')[0].trim();return u.host===host;}catch{return false;}}
+function clean(v,max){return String(v||'').trim().slice(0,max);}
+module.exports=async function handler(req,res){res.setHeader('Cache-Control','no-store');res.setHeader('X-Content-Type-Options','nosniff');if(req.method!=='POST'){res.setHeader('Allow','POST');return res.status(405).json({error:'Method not allowed.'});}if(!sameOrigin(req))return res.status(403).json({error:'Cross-origin requests are not allowed.'});try{
+ const b=req.body||{};if(clean(b.website,200))return res.status(202).json({ok:true,message:'Enquiry received.'});
+ const buyerName=clean(b.buyerName,120),buyerEmail=clean(b.buyerEmail,180).toLowerCase(),product=clean(b.product,180),material=clean(b.material,160),specifications=clean(b.specifications,4000),notes=clean(b.notes,1200),budget=clean(b.budget,120),delivery=clean(b.deliveryDate,10),factoryId=clean(b.factoryId,80),quantity=Number(b.quantity);
+ if(!buyerName||!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(buyerEmail)||!product||!material||!specifications||!factoryId||!Number.isSafeInteger(quantity)||quantity<1||quantity>100000000)return res.status(400).json({error:'Complete your contact details, choose a factory, and provide a valid product, quantity, material and specifications.'});
+ if(delivery&&!/^\d{4}-\d{2}-\d{2}$/.test(delivery))return res.status(400).json({error:'Delivery date is invalid.'});if(delivery&&delivery<new Date().toISOString().slice(0,10))return res.status(400).json({error:'Delivery date must be today or later.'});
+ const factory=await store.getRfqRecipient(factoryId);if(!factory)return res.status(409).json({error:'This factory is not currently accepting enquiries. Choose another factory or contact support.'});
+ if(!process.env.RFQ_TOKEN_SECRET)return res.status(503).json({error:'RFQ_TOKEN_SECRET is not configured. Enquiry submission is temporarily unavailable.'});
+ if(!await svc.consumeRateLimit('rfq-submit',req,5,900))return res.status(429).json({error:'Too many enquiries from this connection. Please wait 15 minutes before trying again.'});
+ const id=crypto.randomUUID(),reference='MF-RFQ-'+crypto.randomBytes(4).toString('hex').toUpperCase();const buyerToken=svc.makeToken('buyer',id,180),responseToken=svc.makeToken('factory-response',id,14);
+ const row={id,reference,factory_id:factory.id,buyer_name:buyerName,buyer_email:buyerEmail,product,quantity,material,budget,delivery_date:delivery||null,specifications,notes,status:'submitted',supplier_response:'',notification_status:'pending',notification_error:'',buyer_access_hash:svc.hash(buyerToken),response_access_hash:svc.hash(responseToken),created_at:new Date().toISOString(),updated_at:new Date().toISOString(),responded_at:null};
+ await svc.insertRfq(row);let factoryNotified=false,buyerReceiptSent=false,deliveryError='';
+ try{await svc.sendFactoryNotification(row,factory,responseToken);factoryNotified=true;await svc.patchRfq(id,{status:'notified',notification_status:'sent',notification_error:''});}catch(e){deliveryError=String(e.message||'Notification delivery failed').slice(0,300);await svc.patchRfq(id,{status:'notification_failed',notification_status:'failed',notification_error:deliveryError});}
+ try{await svc.sendBuyerReceipt(row,buyerToken);buyerReceiptSent=true;}catch(e){/* The status link is also returned to the submitter once; do not fail the saved RFQ. */}
+ return res.status(201).json({ok:true,reference,status:factoryNotified?'notified':'notification_failed',factoryNotified,buyerReceiptSent,statusUrl:`/rfq-status.html#token=${encodeURIComponent(buyerToken)}`,message:factoryNotified?'Your enquiry was saved and the factory was emailed. Keep the private tracking link.':`Your enquiry was saved, but email notification failed. Please contact support with reference ${reference}.`,notificationError:deliveryError||undefined});
+ }catch(e){return res.status(e.status||500).json({error:e.status===503?e.message:'Could not save or deliver the enquiry. Please try again later.'});}};
